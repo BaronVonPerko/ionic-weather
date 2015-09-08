@@ -55,8 +55,18 @@
             <div class="list">
               <label class="item item-input">
                 <span class="input-label">Units</span>
-                <button class="button button-radio" ng-class="settings.tempUnits == 'f' ? 'button-positive' : ''" ng-value="'f'" ng-click="settings.tempUnits = 'f'">&deg;F</button>
-                <button class="button button-radio" ng-class="settings.tempUnits == 'c' ? 'button-positive' : ''" ng-value="'c'" ng-click="settings.tempUnits = 'c'">&deg;C</button>
+                <button class="button button-radio"
+                  ng-class="settings.tempUnits == 'f' ? 'button-positive' : ''"
+                  ng-value="'f'"
+                  ng-click="settings.tempUnits = 'f'">
+                    &deg;F
+                </button>
+                <button class="button button-radio"
+                  ng-class="settings.tempUnits == 'c' ? 'button-positive' : ''"
+                  ng-value="'c'" 
+                  ng-click="settings.tempUnits = 'c'">
+                    &deg;C
+                </button>
               </label>
             </div>
           </div>
